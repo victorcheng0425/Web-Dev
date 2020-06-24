@@ -4,7 +4,7 @@
   background-color: lightblue;
   text-align: center;
 }
-body {
+.body1{
   background-image: url('ironman.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,14 +13,32 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-.center {
 
+.body2{
+    background-image: url('spiderman.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+.center1{
   margin-left: 20%;
   height: 310px;
   width: 310px;
 }
 
-.button {
+.center2{
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+  width: 500px;
+
+}
+
+.circle_button {
     background-color: Blue; /* Green */
     border: none;
     color: white;
@@ -31,6 +49,19 @@ body {
     display: inline-block;
     font-size: 16px;
   }
+
+.reg_button{
+    background-color: Green; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 0%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .introfont{
     font-size: large;
     color: red;

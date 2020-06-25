@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+   <link rel="stylesheet" href="testing.css">
+<body class="body1">
+   <div = class = "myDiv">
+      <h1>Web-Dev Testing site</h1>
+      <h3>Victor.C</h3>
+      <p>Here we go!</p>
+   </div>
+   <a href="index.html" class="reg_button">Home Page</a>
+   <br><br><a href="ironman.jpg" class="circle_button">Wallpaper!!!</a>
+   <p>
+      Google Link: 
+      <a href="https://www.google.com">Google!</a>
+   </p>
+   <p>
+      My GitHub:
+      <a href="https://github.com/victorcheng0425">Lets Go!</a>
+   </p>
+   <p>
+      My E-mail:
+      <a href="mailto:victorcheng0425@gmail.com">Send email</a>
+   </p>
+   <button onclick="getLocation()">Try It</button>
+   <p id="demo"></p>
+   <p id="mapholder"></p>
+</body>
+
+
+<script>
+//gps location, not finish yet~
+    var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+</head>
+</html>

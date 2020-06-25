@@ -5,7 +5,7 @@
   text-align: center;
 }
 .body1{
-  background-image: url('ironman.jpg');
+  background-image: url('image/ironman.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .body2{
-    background-image: url('spiderman.jpg');
+    background-image: url('image/spiderman.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
